@@ -12,6 +12,9 @@
   <a href="https://gitlab.estg.ipp.pt/esii.grupo1213/esii-grupo1213-tp2" target="_blank">
     <img src="https://img.shields.io/badge/-Original%20repository-grey?style=for-the-badge"/>
   </a>
+  <a href="https://github.com/nunofbcastro-ESTG-IPP/ESII_2021_2022/wiki" target="_blank">
+    <img src="https://img.shields.io/badge/-Wiki%20copy-grey?style=for-the-badge"/>
+  </a>
 </p>
 
 ---
@@ -37,12 +40,6 @@ gradle run --console=plain
 <h2>Pipeline</h2>
 
 <img src="https://github.com/nunofbcastro-ESTG-IPP/ESII_2021_2022/blob/main/images/Pipeline.jpeg"/>
-
----
-
-<h2>Wiki copy</h2>
-
-[https://github.com/nunofbcastro-ESTG-IPP/ESII_2021_2022/wiki](https://github.com/nunofbcastro-ESTG-IPP/ESII_2021_2022/wiki)
 
 ---
 
