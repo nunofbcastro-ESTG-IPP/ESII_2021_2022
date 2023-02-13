@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"estg.ipp.pt.Enums"},{"l":"estg.ipp.pt.Interfaces"},{"l":"estg.ipp.pt.Modulo_Calculo_Custos"},{"l":"estg.ipp.pt.Modulo_Expedicoes"},{"l":"estg.ipp.pt.Modulo_Transacoes"},{"l":"estg.ipp.pt.Utils"}]

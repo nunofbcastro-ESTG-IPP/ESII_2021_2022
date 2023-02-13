@@ -29,13 +29,12 @@
 
 ```bash
 cd demo-Grupo1213-TP2
-gradle run
+gradle run --console=plain
 ```
 
 ---
 
 <h2>Pipeline</h2>
-
 
 <img src="https://github.com/nunofbcastro-ESTG-IPP/ESII_2021_2022/blob/main/images/Pipeline.jpeg"/>
 

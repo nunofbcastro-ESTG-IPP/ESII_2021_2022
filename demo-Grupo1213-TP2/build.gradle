@@ -1,9 +1,14 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
-group 'org.example'
 version '1.0-SNAPSHOT'
+
+application {
+    mainClassName = "demo"
+    mainClassName = "demo.Main"
+}
 
 java {
     toolchain {
@@ -22,6 +27,10 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
     implementation name: 'ESII-Grupo1213-TP2-1.0'
+}
+
+run{
+    standardInput = System.in
 }
 
 test {
