@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Expedicoes.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ESII-Grupo1213-TP2</a> &gt; <a href="index.source.html" class="el_package">estg.ipp.pt.Modulo_Expedicoes</a> &gt; <span class="el_source">Expedicoes.java</span></div><h1>Expedicoes.java</h1><pre class="source lang-java linenums">package estg.ipp.pt.Modulo_Expedicoes;
+
+import estg.ipp.pt.Enums.EstadoEncomenda;
+import estg.ipp.pt.Interfaces.Contentor;
+import estg.ipp.pt.Interfaces.Encomenda;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import estg.ipp.pt.Utils.JSON;
+import estg.ipp.pt.Utils.Utils;
+import com.orgcom.District;
+import estg.ipp.pt.Enums.EstadoContentor;
+
+/**
+ * Classe responsÃ¡vel por gerir as expediÃ§Ãµes das encomendas
+ */
+public final class Expedicoes {
+<span class="fc" id="L19">    private static final List&lt;Contentor&gt; contentores = new ArrayList&lt;&gt;();</span>
+
+<span class="nc" id="L21">    private Expedicoes() {</span>
+<span class="nc" id="L22">        throw new UnsupportedOperationException();</span>
+    }
+
+    /**
+     * Adiciona um contentor Ã  lista de contentores
+     * 
+     * @param distrito Distrito para associar ao contentor a ser adicionado
+     */
+    private static void addContentor(final District distrito) {
+<span class="pc bpc" id="L31" title="1 of 2 branches missed.">        if (distrito == null) {</span>
+<span class="nc" id="L32">            throw new IllegalArgumentException(&quot;District cannot be null&quot;);</span>
+        }
+
+<span class="fc" id="L35">        contentores.add(new BasicContentor(distrito));</span>
+<span class="fc" id="L36">    }</span>
+
+    /**
+     * Retorna os contentores de determinado distrito que nÃ£o estÃ£o cheios, ou seja,
+     * estÃ£o livres
+     * 
+     * @param distrito Distrito a verificar os contentores livres
+     * @return Lista de contentores livres para determinado distrito
+     */
+    private static List&lt;Contentor&gt; checkContentoresLivres(final District distrito) {
+<span class="fc" id="L46">        final List&lt;Contentor&gt; tempContentores = new ArrayList&lt;&gt;();</span>
+
+<span class="fc bfc" id="L48" title="All 2 branches covered.">        for (final Contentor contentore : contentores) {</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">            if (contentore.getDistrito().equals(distrito)</span>
+<span class="pc bpc" id="L50" title="1 of 2 branches missed.">                    &amp;&amp; contentore.getEstado().equals(EstadoContentor.LIVRE)) {</span>
+<span class="fc" id="L51">                tempContentores.add(contentore);</span>
+            }
+<span class="fc" id="L53">        }</span>
+
+<span class="fc" id="L55">        return tempContentores;</span>
+    }
+
+    /**
+     * Associa uma encomenda a um contentor vÃ¡lido e Ã© alterado o estado da
+     * mesma para COMPLETA. Caso nÃ£o exista um contentor
+     * vÃ¡lido para o distrito da encomenda Ã© entÃ£o criado um novo contentor
+     * 
+     * @param encomenda Encomenda a associar a um contentor vÃ¡lido
+     */
+    private static void setEncomendaToContentor(final Encomenda encomenda) {
+<span class="fc" id="L66">        final District distritoEncomenda = Utils</span>
+<span class="fc" id="L67">                .stringLabelToDistrict(encomenda.getTransactionEnvio().getReceiver().getDistrict());</span>
+<span class="fc" id="L68">        List&lt;Contentor&gt; tempContentores = checkContentoresLivres(distritoEncomenda);</span>
+
+<span class="fc bfc" id="L70" title="All 2 branches covered.">        for (final Contentor tempContentor : tempContentores) {</span>
+<span class="pc bpc" id="L71" title="1 of 2 branches missed.">            if (tempContentor.addEncomenda(encomenda)) {</span>
+<span class="fc" id="L72">                encomenda.setEstado(EstadoEncomenda.COMPLETA);</span>
+<span class="fc" id="L73">                return;</span>
+            }
+<span class="nc" id="L75">        }</span>
+
+<span class="fc" id="L77">        addContentor(distritoEncomenda);</span>
+<span class="fc" id="L78">        contentores.get(contentores.size() - 1).addEncomenda(encomenda);</span>
+<span class="fc" id="L79">    }</span>
+
+    /**
+     * Atribui encomendas aos respetivos contentores e exporta para JSON as
+     * informaÃ§Ãµes dos contentores e das suas encomendas
+     * 
+     * @param encomendas Encomendas a atribuir aos contentores
+     * @param path       Caminho para onde serÃ¡ exportado o documento JSON
+     * @return True caso o JSON seja exportado com sucesso e tenham sido atribuidas
+     *         encomendas aos contentores, False caso contrÃ¡rio
+     */
+    public static boolean assignEncomendas(final Iterator&lt;Encomenda&gt; encomendas, final String path) {
+<span class="fc" id="L91">        boolean isValid = true;</span>
+
+<span class="fc bfc" id="L93" title="All 2 branches covered.">        if (encomendas == null) {</span>
+<span class="fc" id="L94">            throw new IllegalArgumentException(&quot;encomendas cannot be null.&quot;);</span>
+        }
+
+<span class="fc bfc" id="L97" title="All 2 branches covered.">        while (encomendas.hasNext()) {</span>
+<span class="fc" id="L98">            setEncomendaToContentor(encomendas.next());</span>
+        }
+
+<span class="fc bfc" id="L101" title="All 2 branches covered.">        if (contentores.isEmpty()) {</span>
+<span class="fc" id="L102">            isValid = false;</span>
+        }
+
+<span class="fc bfc" id="L105" title="All 2 branches covered.">        if (isValid) {</span>
+            try {
+<span class="fc" id="L107">                isValid = JSON.exportContentores(contentores, path);</span>
+<span class="nc" id="L108">            } catch (IOException e) {</span>
+<span class="nc" id="L109">                isValid = false;</span>
+<span class="fc" id="L110">            }</span>
+
+<span class="fc bfc" id="L112" title="All 2 branches covered.">            if(!isValid){</span>
+<span class="fc" id="L113">                revertOrderState();</span>
+            }
+        }
+
+<span class="fc" id="L117">        contentores.removeAll(contentores);</span>
+<span class="fc" id="L118">        return isValid;</span>
+    }
+
+    /**
+     * Muda o estado das encomendas para EM_PROCESSAMENTO, caso exista algum erro a
+     * exportar o JSON
+     */
+    private static void revertOrderState() {
+<span class="fc" id="L126">        Iterator&lt;Encomenda&gt; iterator = null;</span>
+
+<span class="fc bfc" id="L128" title="All 2 branches covered.">        for (Contentor contentor : contentores) {</span>
+<span class="fc" id="L129">            iterator = contentor.getEncomendas();</span>
+<span class="fc bfc" id="L130" title="All 2 branches covered.">            while (iterator.hasNext()) {</span>
+<span class="fc" id="L131">                iterator.next().setEstado(EstadoEncomenda.EM_PROCESSAMENTO);</span>
+            }
+<span class="fc" id="L133">        }</span>
+<span class="fc" id="L134">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

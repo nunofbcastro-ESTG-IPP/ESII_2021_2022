@@ -1,0 +1,100 @@
+plugins {
+    id 'java'
+    id 'jacoco'
+    id 'pmd'
+}
+
+group 'estg.ipp.pt'
+version '1.0'
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(13))
+    }
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    implementation name: 'OrgComm-2.0'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging { events "passed", "skipped", "failed", "standardOut", "standardError" }
+    finalizedBy jacocoTestReport
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled true
+        csv.destination file("${buildDir}/reports/jacocoCsv/jacoco.csv")
+        html.destination file("${buildDir}/reports/jacoco")
+    }
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.65
+            }
+        }
+    }
+}
+
+pmd {
+    ruleSetConfig = rootProject.resources.text.fromFile('./pmd/ruleset.xml')
+    ignoreFailures = true
+}
+
+def dependsDir = "${buildDir}/libs/dependencies/" as Object
+task copyDependencies(type: Copy) {
+    from configurations.default
+    into "${dependsDir}"
+}
+
+task fatJar(type: Jar) {
+    dependsOn 'copyDependencies'
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    compileJava {
+        options.encoding = "UTF-8"
+    }
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } } {
+        exclude "META-INF/.SF"
+        exclude "META-INF/.DSA"
+        exclude "META-INF/*.RSA"
+    }
+    with jar
+}
+
+task myJavadocs(type: Javadoc) {
+    options.encoding = 'UTF-8'
+    classpath = project.sourceSets.main.runtimeClasspath
+    source = sourceSets.main.allJava
+}
+
+task packageDistribution(type: Zip) {
+    dependsOn 'fatJar'
+    dependsOn 'myJavadocs'
+    archiveFileName = "my-distribution.zip"
+    destinationDirectory = file("$buildDir/dist")
+    from("$buildDir/docs")
+    from ("$buildDir/libs") {
+        include "**/*.jar"
+    }
+    from ("$buildDir") {
+        include "reports/**"
+    }
+}
+
+build.finalizedBy(packageDistribution)

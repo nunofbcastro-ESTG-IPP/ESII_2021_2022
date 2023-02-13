@@ -1,0 +1,66 @@
+image: java:8-jdk
+
+stages:
+  - build
+  - test
+
+before_script:
+  - echo "Start Automated Build"
+  - cd ./ESII-Grupo1213-TP2
+  - export GRADLE_USER_HOME=`pwd`/.gradle
+  - chmod +x ./gradlew
+
+.restrictions:
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: always
+    - changes:
+        - "**/ESII-Grupo1213-TP2/*"
+      when: always 
+
+cache:
+  paths:
+    - .gradle/wrapper
+    - .gradle/caches
+
+build:
+  stage: build
+  script:
+    - ./gradlew clean
+    - ./gradlew assemble
+  artifacts:
+    paths:
+      - build/libs/*.jar
+    expire_in: 1 week
+  extends: .restrictions
+  tags: 
+      - estg
+
+test_black_box:
+  stage: test
+  script:
+    - ./gradlew test
+  artifacts:
+    paths:
+      - build/test-results/test/TEST-*.xml
+  extends: .restrictions
+  tags: 
+      - estg
+
+test_white_box:
+  stage: test
+  script:
+    - ./gradlew jacocoTestReport
+    - ./gradlew check
+    - awk -F"," '{ instructions += $4 + $5; covered += $5 } END { print covered, "/", instructions, " instructions covered"; print 100*covered/instructions, "% covered" }' build/reports/jacocoCsv/jacoco.csv
+    - ./gradlew jacocoTestCoverageVerification
+    - cat build/reports/jacoco/index.html | grep -o '<tfoot>.*</tfoot>'
+  artifacts:
+    paths:
+      - build/reports/jacoco*
+  extends: .restrictions
+  tags: 
+      - estg
+
+after_script:
+  - echo "End Automated Build"

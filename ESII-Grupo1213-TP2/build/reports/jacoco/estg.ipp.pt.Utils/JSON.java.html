@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>JSON.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ESII-Grupo1213-TP2</a> &gt; <a href="index.source.html" class="el_package">estg.ipp.pt.Utils</a> &gt; <span class="el_source">JSON.java</span></div><h1>JSON.java</h1><pre class="source lang-java linenums">package estg.ipp.pt.Utils;
+
+import estg.ipp.pt.Interfaces.Contentor;
+import estg.ipp.pt.Interfaces.Encomenda;
+import estg.ipp.pt.Interfaces.Produto;
+import estg.ipp.pt.Modulo_Transacoes.*;
+import com.orgcom.District;
+import com.orgcom.Entity;
+import com.orgcom.Transaction;
+import com.orgcom.TransactionLine;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import estg.ipp.pt.Enums.TipoTransaction;
+import org.json.simple.parser.ParseException;
+
+import java.io.*;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+public final class JSON {
+    /**
+     * Construtor utilizado para privar a instanciaÃ§Ã£o desta classe
+     */
+<span class="nc" id="L31">    private JSON() {</span>
+<span class="nc" id="L32">        throw new UnsupportedOperationException();</span>
+    }
+
+    /**
+     * Exporta todas as estatÃ­sticas para um documento JSON
+     *
+     * @param encomendas Iterador de encomendas
+     * @param dataInicio Data de inÃ­cio do perÃ­odo de tempo utilizado na pesquisa
+     * @param dataFim    Data de fim do perÃ­odo de tempo utilizado na pesquisa
+     * @param file       Caminho para onde serÃ¡ exportado o documento JSON
+     * @return True caso o JSON seja exportado com sucesso, False caso contrÃ¡rio
+     * @throws IOException Caso o caminho do ficheiro seja invÃ¡lido
+     */
+    public static boolean exportEstatisticas(final Iterator&lt;Encomenda&gt; encomendas, final LocalDate dataInicio,
+            final LocalDate dataFim, final String file) throws IOException {
+<span class="nc bnc" id="L47" title="All 2 branches missed.">        if (!Files.isValidPath(file)) {</span>
+<span class="nc" id="L48">            throw new IOException(&quot;Invalid file&quot;);</span>
+        }
+
+        try {
+<span class="nc" id="L52">            final List&lt;Encomenda&gt; encomendasI = Utils.iteratorToArray(encomendas);</span>
+<span class="nc" id="L53">            final JSONObject obj = new JSONObject();</span>
+
+<span class="nc" id="L55">            obj.put(&quot;NÃºmero medio de produtos por transaÃ§Ã£o&quot;,</span>
+<span class="nc" id="L56">                    Estatisticas.getNumMedioProdutosPorTransacao(encomendasI.iterator()));</span>
+<span class="nc" id="L57">            obj.put(&quot;NÃºmero medio de encomendas por dia&quot;,</span>
+<span class="nc" id="L58">                    Estatisticas.getNumMedioEncomendasPorDia(encomendasI.iterator()));</span>
+<span class="nc" id="L59">            obj.put(&quot;Valor medio de transaÃ§Ãµes&quot;, Estatisticas.getValorMedioTransacoes(encomendasI.iterator()));</span>
+<span class="nc" id="L60">            obj.put(&quot;Total de Custos de Envio(Data Inicio:&quot; + dataInicio.toString() + &quot;, Data Fim:&quot; + dataFim.toString()</span>
+                    + &quot;)&quot;,
+<span class="nc" id="L62">                    Estatisticas.getTotalCustosEnvio(encomendasI.iterator(), dataInicio, dataFim));</span>
+
+<span class="nc" id="L64">            final JSONArray vendasComprasPorDistrito = new JSONArray();</span>
+<span class="nc" id="L65">            double[][] vendasCompras = Estatisticas.getValorMedioVendasComprasPorDistrito(encomendasI.iterator());</span>
+
+<span class="nc bnc" id="L67" title="All 2 branches missed.">            for (int i = 0; i &lt; vendasCompras.length; i++) {</span>
+<span class="nc" id="L68">                final JSONObject datum = new JSONObject();</span>
+<span class="nc" id="L69">                datum.put(&quot;Distrito&quot;, District.values()[i].toString());</span>
+<span class="nc" id="L70">                datum.put(&quot;Venda&quot;, vendasCompras[i][0]);</span>
+<span class="nc" id="L71">                datum.put(&quot;Compra&quot;, vendasCompras[i][1]);</span>
+
+<span class="nc" id="L73">                vendasComprasPorDistrito.add(datum);</span>
+            }
+
+<span class="nc" id="L76">            obj.put(&quot;Valor medio de vendas e compras por distrito&quot;, vendasComprasPorDistrito);</span>
+
+<span class="nc" id="L78">            return Files.writeFile(file, obj.toJSONString());</span>
+<span class="nc" id="L79">        } catch (IllegalArgumentException e) {</span>
+<span class="nc" id="L80">            return false;</span>
+        }
+    }
+
+    /**
+     * Exporta para JSON as informaÃ§Ãµes dos contentores e das suas encomendas
+     *
+     * @param contentores Array List de contentores
+     * @param file        Caminho para onde serÃ¡ exportado o documento JSON
+     * @return True caso o JSON seja exportado com sucesso, False caso contrÃ¡rio
+     * @throws IOException Caso o caminho do ficheiro seja invÃ¡lido
+     */
+    public static boolean exportContentores(final List&lt;Contentor&gt; contentores, final String file) throws IOException {
+<span class="pc bpc" id="L93" title="1 of 2 branches missed.">        if (!Files.isValidPath(file)) {</span>
+<span class="nc" id="L94">            throw new IOException(&quot;Invalid file&quot;);</span>
+        }
+
+        try {
+<span class="fc" id="L98">            final JSONObject objectContentores = new JSONObject();</span>
+<span class="fc" id="L99">            JSONArray arrayEncomendas = null;</span>
+<span class="fc" id="L100">            final JSONArray arrayContentores = new JSONArray();</span>
+            Iterator&lt;Encomenda&gt; iterator;
+
+<span class="fc bfc" id="L103" title="All 2 branches covered.">            for (int i = 0; i &lt; contentores.size(); i++) {</span>
+<span class="fc" id="L104">                Map c = new LinkedHashMap(contentores.size());</span>
+<span class="fc" id="L105">                arrayEncomendas = new JSONArray();</span>
+<span class="fc" id="L106">                iterator = contentores.get(i).getEncomendas();</span>
+<span class="fc" id="L107">                Encomenda encomenda = null;</span>
+
+<span class="fc bfc" id="L109" title="All 2 branches covered.">                while (iterator.hasNext()) {</span>
+<span class="fc" id="L110">                    Map e = new LinkedHashMap(contentores.get(i).getSizeEncomendas());</span>
+<span class="fc" id="L111">                    encomenda = iterator.next();</span>
+<span class="fc" id="L112">                    e.put(&quot;IdEncomenda&quot;, encomenda.getIdEncomenda());</span>
+<span class="fc" id="L113">                    e.put(&quot;PreÃ§o_Total&quot;, encomenda.getPrecoTotal());</span>
+<span class="fc" id="L114">                    arrayEncomendas.add(e);</span>
+<span class="fc" id="L115">                }</span>
+
+<span class="fc" id="L117">                c.put(&quot;IdContentor&quot;, contentores.get(i).getIdContentor());</span>
+<span class="fc" id="L118">                c.put(&quot;Distrito&quot;, contentores.get(i).getDistrito().toString());</span>
+<span class="fc" id="L119">                c.put(&quot;Estado&quot;, contentores.get(i).getEstado().toString());</span>
+<span class="fc" id="L120">                c.put(&quot;Capacidade&quot;, Utils.TwoCasesDecimals(contentores.get(i).getCapacidade()));</span>
+<span class="fc" id="L121">                c.put(&quot;Encomendas&quot;, arrayEncomendas);</span>
+<span class="fc" id="L122">                arrayContentores.add(c);</span>
+
+            }
+<span class="fc" id="L125">            objectContentores.put(&quot;Contentores&quot;, arrayContentores);</span>
+
+<span class="fc" id="L127">            return Files.writeFile(file, objectContentores.toJSONString());</span>
+<span class="nc" id="L128">        } catch (IllegalArgumentException e) {</span>
+<span class="nc" id="L129">            return false;</span>
+        }
+    }
+
+    /**
+     * Importa encomendas atravÃ©s de um ficheiro JSON
+     *
+     * @param file Caminho do ficheiro json do qual vÃ£o ser importadas as encomendas
+     * @return Lista de encomendas importadas
+     * @throws IOException Caso o caminho do ficheiro seja invÃ¡lido
+     */
+    public static List&lt;Encomenda&gt; importEncomendas(final String file) throws IOException {
+<span class="nc bnc" id="L141" title="All 2 branches missed.">        if (!Files.isValidPath(file)) {</span>
+<span class="nc" id="L142">            throw new IOException(&quot;Invalid file&quot;);</span>
+        }
+
+<span class="nc" id="L145">        final List&lt;Encomenda&gt; encomendas = new ArrayList&lt;&gt;();</span>
+
+        final JSONArray data;
+<span class="nc" id="L148">        final JSONParser parser = new JSONParser();</span>
+
+        try {
+<span class="nc" id="L151">            data = (JSONArray) ((JSONObject) parser.parse(Files.readFile(file))).get(&quot;orders&quot;);</span>
+<span class="nc" id="L152">        } catch (ParseException e) {</span>
+<span class="nc" id="L153">            throw new IOException(&quot;File not readable&quot;);</span>
+<span class="nc" id="L154">        }</span>
+
+<span class="nc bnc" id="L156" title="All 2 branches missed.">        for (final Object datum : data) {</span>
+<span class="nc" id="L157">            final JSONObject resultObject = (JSONObject) datum;</span>
+            try {
+<span class="nc" id="L159">                final String id = String.valueOf(resultObject.get(&quot;id&quot;));</span>
+<span class="nc" id="L160">                final LocalDate date = Utils.stringToLocalDate(String.valueOf(resultObject.get(&quot;date&quot;)));</span>
+
+<span class="nc" id="L162">                final Entity sender = createBasicEntidade((JSONObject) resultObject.get(&quot;sender&quot;));</span>
+<span class="nc" id="L163">                final Entity receiver = createBasicEntidade((JSONObject) resultObject.get(&quot;receiver&quot;));</span>
+
+<span class="nc" id="L165">                final List&lt;TransactionLine&gt; transactionLines = getTransactionLines(</span>
+<span class="nc" id="L166">                        (JSONArray) resultObject.get(&quot;products&quot;));</span>
+
+<span class="nc" id="L168">                encomendas.add(createEncomenda(id, date, sender, receiver, transactionLines));</span>
+<span class="nc" id="L169">            } catch (IllegalArgumentException | NullPointerException ignored) {</span>
+<span class="nc" id="L170">            }</span>
+<span class="nc" id="L171">        }</span>
+
+<span class="nc" id="L173">        return encomendas;</span>
+    }
+
+    /**
+     * Cria uma entidade com os dados enviados por parÃ¢metro
+     * 
+     * @param basicEntidadeObject Objeto com os dados da entidade
+     * @return Entidade criada com os dados enviados
+     * @throws IllegalArgumentException Caso algum dado seja invÃ¡lido
+     */
+    private static Entity createBasicEntidade(final JSONObject basicEntidadeObject) throws IllegalArgumentException {
+        final String name, nif;
+        final String address;
+        final District district;
+
+        try {
+<span class="nc" id="L189">            name = String.valueOf(basicEntidadeObject.get(&quot;name&quot;));</span>
+<span class="nc" id="L190">            address = String.valueOf(basicEntidadeObject.get(&quot;address&quot;));</span>
+<span class="nc" id="L191">            district = Utils.stringLabelToDistrict((String) basicEntidadeObject.get(&quot;district&quot;));</span>
+<span class="nc" id="L192">            nif = String.valueOf(basicEntidadeObject.get(&quot;vat&quot;));</span>
+
+<span class="nc bnc" id="L194" title="All 2 branches missed.">            if (nif == null) {</span>
+<span class="nc" id="L195">                throw new IllegalArgumentException(&quot;NIF is invalid&quot;);</span>
+            }
+<span class="nc" id="L197">        } catch (NullPointerException e) {</span>
+<span class="nc" id="L198">            throw new IllegalArgumentException(&quot;Invalid data&quot;);</span>
+<span class="nc" id="L199">        }</span>
+
+<span class="nc" id="L201">        return new BasicEntidade(name, district, address, nif);</span>
+    }
+
+    /**
+     * Cria uma encomenda com os dados enviados por parÃ¢metro
+     * 
+     * @param id               Id da encomenda
+     * @param date             Data da encomenda
+     * @param sender           Entidade emissora da encomenda
+     * @param receiver         Entidade recetora da encomenda
+     * @param transactionLines Lista com as transaÃ§Ãµes de envio e pagamento da
+     *                         encomenda
+     * @return Encomenda criada com os dados enviados
+     * @throws IllegalArgumentException Caso algum dado seja invÃ¡lido
+     */
+    private static Encomenda createEncomenda(final String id, final LocalDate date, final Entity sender,
+            final Entity receiver, final List&lt;TransactionLine&gt; transactionLines) throws IllegalArgumentException {
+<span class="nc" id="L218">        final Transaction transaction = createTransactionEnvio(sender, receiver, transactionLines);</span>
+<span class="nc" id="L219">        return new BasicEncomenda(transaction, date, id);</span>
+    }
+
+    /**
+     * Cria uma transaÃ§Ã£o de envio com os dados enviados por parÃ¢metro
+     * 
+     * @param sender           Entidade emissora da encomenda
+     * @param receiver         Entidade recetora da encomenda
+     * @param transactionLines Lista com as transaÃ§Ãµes de envio e pagamento da
+     *                         encomenda
+     * @return TransaÃ§Ã£o criada com os dados enviados
+     * @throws IllegalArgumentException Caso algum dado seja invÃ¡lido
+     */
+    private static Transaction createTransactionEnvio(final Entity sender, final Entity receiver,
+            final List&lt;TransactionLine&gt; transactionLines) throws IllegalArgumentException {
+<span class="nc bnc" id="L234" title="All 2 branches missed.">        if (transactionLines.isEmpty()) {</span>
+<span class="nc" id="L235">            throw new IllegalArgumentException(&quot;Invalid data&quot;);</span>
+        }
+
+<span class="nc" id="L238">        final BasicTransactionEncomenda transaction = new BasicTransactionEncomenda(sender, receiver,</span>
+                TipoTransaction.ENVIO);
+
+<span class="nc bnc" id="L241" title="All 2 branches missed.">        for (final TransactionLine transactionLine : transactionLines) {</span>
+<span class="nc" id="L242">            transaction.addTransactionLine(transactionLine);</span>
+<span class="nc" id="L243">        }</span>
+
+<span class="nc" id="L245">        return transaction;</span>
+    }
+
+    /**
+     * Cria um lista com todas as linhas de transaÃ§Ã£o adicionadas
+     * 
+     * @param data JSON Array que contÃ©m os vÃ¡rios produtos
+     * @return Lista com as linhas de transaÃ§Ã£o
+     * @throws IllegalArgumentException Caso algum dado seja invÃ¡lido
+     */
+    private static List&lt;TransactionLine&gt; getTransactionLines(final JSONArray data) throws IllegalArgumentException {
+<span class="nc" id="L256">        final List&lt;TransactionLine&gt; transactionLines = new ArrayList&lt;&gt;();</span>
+
+<span class="nc bnc" id="L258" title="All 2 branches missed.">        for (final Object datum : data) {</span>
+<span class="nc" id="L259">            transactionLines.add(createTransactionLine((JSONObject) datum));</span>
+<span class="nc" id="L260">        }</span>
+
+<span class="nc" id="L262">        return transactionLines;</span>
+    }
+
+    /**
+     * Cria uma linha de transaÃ§Ã£o com os dados enviados por parÃ¢metro
+     *
+     * @param basicTransactionLineObject Objeto com os dados da linha de transaÃ§Ã£o
+     * @return Linha de transaÃ§Ã£o criada com os dados enviados
+     * @throws IllegalArgumentException Caso algum dado seja invÃ¡lido
+     */
+    private static TransactionLine createTransactionLine(final JSONObject basicTransactionLineObject)
+            throws IllegalArgumentException {
+        Integer quantity;
+        Produto produto;
+
+        try {
+<span class="nc" id="L278">            final Object idObject = basicTransactionLineObject.get(&quot;id&quot;);</span>
+<span class="nc" id="L279">            final Integer id = Utils.integerParseWithDefault(idObject);</span>
+
+<span class="nc" id="L281">            final String name = String.valueOf(basicTransactionLineObject.get(&quot;name&quot;));</span>
+<span class="nc" id="L282">            final String description = String.valueOf(basicTransactionLineObject.get(&quot;description&quot;));</span>
+
+<span class="nc" id="L284">            final Object priceObject = basicTransactionLineObject.get(&quot;price&quot;);</span>
+<span class="nc" id="L285">            final Double price = Utils.doubleParseWithDefault(priceObject);</span>
+
+<span class="nc" id="L287">            final Object quantityObject = basicTransactionLineObject.get(&quot;quantity&quot;);</span>
+<span class="nc" id="L288">            quantity = Utils.integerParseWithDefault(quantityObject);</span>
+
+<span class="nc" id="L290">            final Object volume_m3Object = basicTransactionLineObject.get(&quot;volume-m3&quot;);</span>
+<span class="nc" id="L291">            final Double volume_m3 = Utils.doubleParseWithDefault(volume_m3Object);</span>
+
+<span class="nc" id="L293">            final Object weight_kgObject = basicTransactionLineObject.get(&quot;weight-kg&quot;);</span>
+<span class="nc" id="L294">            final Double weight_kg = Utils.doubleParseWithDefault(weight_kgObject);</span>
+
+<span class="nc bnc" id="L296" title="All 2 branches missed.">            if (quantity == null) {</span>
+<span class="nc" id="L297">                throw new IllegalArgumentException(&quot;Invalid quantity&quot;);</span>
+            }
+
+<span class="nc" id="L300">            produto = new BasicProduto(name, id, price, volume_m3, weight_kg, description);</span>
+<span class="nc" id="L301">        } catch (NullPointerException e) {</span>
+<span class="nc" id="L302">            throw new IllegalArgumentException(&quot;Invalid data&quot;);</span>
+<span class="nc" id="L303">        }</span>
+
+<span class="nc" id="L305">        return new BasicLinhaTransacao(produto, quantity);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BasicGestaoEncomendas.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ESII-Grupo1213-TP2</a> &gt; <a href="index.source.html" class="el_package">estg.ipp.pt.Modulo_Transacoes</a> &gt; <span class="el_source">BasicGestaoEncomendas.java</span></div><h1>BasicGestaoEncomendas.java</h1><pre class="source lang-java linenums">package estg.ipp.pt.Modulo_Transacoes;
+
+import estg.ipp.pt.Interfaces.Encomenda;
+import estg.ipp.pt.Interfaces.GestaoEncomendas;
+import estg.ipp.pt.Modulo_Expedicoes.Expedicoes;
+import estg.ipp.pt.Utils.JSON;
+
+import com.orgcom.BasicOrganization;
+
+import estg.ipp.pt.Enums.EstadoEncomenda;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class BasicGestaoEncomendas extends BasicOrganization implements GestaoEncomendas {
+
+    private final List&lt;Encomenda&gt; encomendas;
+
+    /**
+     * ResponsÃ¡vel por inicializar a gestÃ£o de encomendas
+     */
+    public BasicGestaoEncomendas() {
+<span class="fc" id="L25">        super();</span>
+<span class="fc" id="L26">        this.encomendas = new ArrayList&lt;Encomenda&gt;();</span>
+<span class="fc" id="L27">    }</span>
+
+    @Override
+    public boolean addEncomenda(final Encomenda encomenda) {
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        if (encomenda == null) {</span>
+<span class="fc" id="L32">            throw new IllegalArgumentException(&quot;Encomenda cannot be null.&quot;);</span>
+        }
+
+<span class="fc bfc" id="L35" title="All 2 branches covered.">        if (findEncomenda(encomenda.getIdEncomenda()) == null) {</span>
+<span class="fc" id="L36">            this.encomendas.add(encomenda);</span>
+
+<span class="fc" id="L38">            return true;</span>
+        }
+
+<span class="fc" id="L41">        return false;</span>
+    }
+
+    @Override
+    public boolean cancelarEncomenda(final Encomenda encomenda) {
+<span class="fc bfc" id="L46" title="All 2 branches covered.">        if (encomenda == null) {</span>
+<span class="fc" id="L47">            throw new IllegalArgumentException(&quot;Encomenda cannot be null.&quot;);</span>
+        }
+
+<span class="fc bfc" id="L50" title="All 2 branches covered.">        if (findEncomenda(encomenda.getIdEncomenda()) != null) {</span>
+<span class="pc bpc" id="L51" title="1 of 2 branches missed.">            if (encomenda.getEstado().equals(EstadoEncomenda.EM_PROCESSAMENTO)) {</span>
+<span class="fc" id="L52">                encomenda.setEstado(EstadoEncomenda.CANCELADA);</span>
+<span class="fc" id="L53">                return true;</span>
+            }
+        }
+
+<span class="fc" id="L57">        return false;</span>
+    }
+
+    @Override
+    public Iterator&lt;Encomenda&gt; getEncomendas() {
+<span class="fc" id="L62">        return encomendas.iterator();</span>
+    }
+
+    @Override
+    public Encomenda findEncomenda(final String idEncomenda) {
+<span class="fc bfc" id="L67" title="All 2 branches covered.">        if (idEncomenda == null) {</span>
+<span class="fc" id="L68">            throw new IllegalArgumentException(&quot;idEncomenda cannot be null.&quot;);</span>
+        }
+
+<span class="fc bfc" id="L71" title="All 2 branches covered.">        for (final Encomenda encomenda : this.encomendas) {</span>
+<span class="fc bfc" id="L72" title="All 2 branches covered.">            if (encomenda.getIdEncomenda().equals(idEncomenda)) {</span>
+<span class="fc" id="L73">                return encomenda;</span>
+            }
+<span class="fc" id="L75">        }</span>
+
+<span class="fc" id="L77">        return null;</span>
+    }
+
+    @Override
+    public boolean atribuirEncomendas(final String path) {
+<span class="nc bnc" id="L82" title="All 2 branches missed.">        if (Expedicoes.assignEncomendas(this.getEncomendas(), path)) {</span>
+<span class="nc bnc" id="L83" title="All 2 branches missed.">            for (Encomenda encomenda : encomendas) {</span>
+<span class="nc bnc" id="L84" title="All 2 branches missed.">                if (encomenda.getEstado() == EstadoEncomenda.COMPLETA) {</span>
+<span class="nc" id="L85">                    encomenda.getTransactionEnvio().getSender().addTokens(1);</span>
+<span class="nc" id="L86">                    encomenda.getTransactionPagamento().getSender().addTokens(1);</span>
+<span class="nc" id="L87">                    super.addTransaction(encomenda.getTransactionEnvio());</span>
+<span class="nc" id="L88">                    super.addTransaction(encomenda.getTransactionPagamento());</span>
+                }
+<span class="nc" id="L90">            }</span>
+
+<span class="nc" id="L92">            registerTransactionsInLedger();</span>
+<span class="nc" id="L93">            return true;</span>
+        }
+<span class="nc" id="L95">        return false;</span>
+    }
+
+    @Override
+    public boolean importEncomendas(final String path) {
+        final List&lt;Encomenda&gt; encomendas;
+
+        try {
+<span class="nc" id="L103">            encomendas = JSON.importEncomendas(path);</span>
+<span class="nc" id="L104">        } catch (IOException e) {</span>
+<span class="nc" id="L105">            return false;</span>
+<span class="nc" id="L106">        }</span>
+
+<span class="nc bnc" id="L108" title="All 2 branches missed.">        for (final Encomenda encomenda : encomendas) {</span>
+<span class="nc" id="L109">            this.addEncomenda(encomenda);</span>
+<span class="nc" id="L110">        }</span>
+
+<span class="nc" id="L112">        return true;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

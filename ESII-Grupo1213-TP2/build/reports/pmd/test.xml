@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.36.0" timestamp="2022-01-21T22:20:57.462">
+<file name="C:\Users\Asus\Desktop\TP2_ESII\esii-grupo1213-tp2\ESII-Grupo1213-TP2\src\test\java\BasicCustosTest.java">
+<violation beginline="14" endline="100" begincolumn="1" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="14" endline="100" begincolumn="1" endcolumn="1" rule="TooManyFields" ruleset="Design" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#toomanyfields" priority="3">
+Too many fields
+</violation>
+<violation beginline="15" endline="15" begincolumn="27" endcolumn="42" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="gestaoEncomendas" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="15" endline="15" begincolumn="27" endcolumn="42" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="gestaoEncomendas" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="15" endline="15" begincolumn="5" endcolumn="43" rule="DefaultPackage" ruleset="Code Style" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="16" endline="16" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="entidade1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="16" endline="16" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="entidade1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="16" endline="16" begincolumn="5" endcolumn="23" rule="DefaultPackage" ruleset="Code Style" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="17" endline="17" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="entidade2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="entidade2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="5" endcolumn="23" rule="DefaultPackage" ruleset="Code Style" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="18" endline="18" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="entidade3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="18" endline="18" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="entidade3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="18" endline="18" begincolumn="5" endcolumn="23" rule="DefaultPackage" ruleset="Code Style" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="19" endline="19" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="produto1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="19" endline="19" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="produto1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="19" endline="19" begincolumn="5" endcolumn="21" rule="DefaultPackage" ruleset="Code Style" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="20" endline="20" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="produto2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="20" endline="20" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="produto2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="20" endline="20" begincolumn="5" endcolumn="21" rule="DefaultPackage" ruleset="Code Style" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="21" endline="21" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="produto3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="21" endline="21" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="produto3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="21" endline="21" begincolumn="5" endcolumn="21" rule="DefaultPackage" ruleset="Code Style" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="22" endline="22" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="transacaoEnvio1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="22" endline="22" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="transacaoEnvio1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="22" endline="22" begincolumn="5" endcolumn="32" rule="DefaultPackage" ruleset="Code Style" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="23" endline="23" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="transacaoEnvio2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="23" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="transacaoEnvio2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="23" begincolumn="5" endcolumn="32" rule="DefaultPackage" ruleset="Code Style" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="24" endline="24" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="transacaoEnvio3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="24" endline="24" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="transacaoEnvio3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="24" endline="24" begincolumn="5" endcolumn="32" rule="DefaultPackage" ruleset="Code Style" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="25" endline="25" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="transacaoEnvio4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="25" endline="25" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="transacaoEnvio4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="25" endline="25" begincolumn="5" endcolumn="32" rule="DefaultPackage" ruleset="Code Style" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="26" endline="26" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="encomenda1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="26" endline="26" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="encomenda1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="26" endline="26" begincolumn="5" endcolumn="25" rule="DefaultPackage" ruleset="Code Style" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="27" endline="27" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="encomenda2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="27" endline="27" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="encomenda2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="27" endline="27" begincolumn="5" endcolumn="25" rule="DefaultPackage" ruleset="Code Style" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="28" endline="28" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="encomenda3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="28" endline="28" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="encomenda3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="28" endline="28" begincolumn="5" endcolumn="25" rule="DefaultPackage" ruleset="Code Style" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="29" endline="29" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="encomenda4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="29" endline="29" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="encomenda4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="29" endline="29" begincolumn="5" endcolumn="25" rule="DefaultPackage" ruleset="Code Style" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="30" endline="30" begincolumn="17" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="custos" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="30" endline="30" begincolumn="17" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicCustosTest" variable="custos" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="30" endline="30" begincolumn="5" endcolumn="23" rule="DefaultPackage" ruleset="Code Style" class="BasicCustosTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="69" endline="99" begincolumn="5" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" class="BasicCustosTest" method="calculaCusto" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="89" endline="91" begincolumn="9" endcolumn="10" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="BasicCustosTest" method="calculaCusto" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'exception' could be declared final
+</violation>
+</file>
+<file name="C:\Users\Asus\Desktop\TP2_ESII\esii-grupo1213-tp2\ESII-Grupo1213-TP2\src\test\java\BasicGestaoEncomendasTest.java">
+<violation beginline="12" endline="148" begincolumn="1" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="12" endline="148" begincolumn="1" endcolumn="1" rule="TooManyFields" ruleset="Design" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#toomanyfields" priority="3">
+Too many fields
+</violation>
+<violation beginline="13" endline="13" begincolumn="27" endcolumn="49" rule="RedundantFieldInitializer" ruleset="Performance" class="BasicGestaoEncomendasTest" variable="gestaoEncomendas" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_performance.html#redundantfieldinitializer" priority="3">
+Avoid using redundant field initializer for 'gestaoEncomendas'
+</violation>
+<violation beginline="13" endline="13" begincolumn="27" endcolumn="42" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="gestaoEncomendas" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="13" endline="13" begincolumn="27" endcolumn="42" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="gestaoEncomendas" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="13" endline="13" begincolumn="5" endcolumn="50" rule="DefaultPackage" ruleset="Code Style" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="14" endline="14" begincolumn="15" endcolumn="23" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="exception" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="14" endline="14" begincolumn="15" endcolumn="23" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="exception" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="14" endline="14" begincolumn="5" endcolumn="24" rule="DefaultPackage" ruleset="Code Style" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="15" endline="15" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="entidade1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="15" endline="15" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="entidade1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="15" endline="15" begincolumn="5" endcolumn="23" rule="DefaultPackage" ruleset="Code Style" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="16" endline="16" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="entidade2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="16" endline="16" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="entidade2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="16" endline="16" begincolumn="5" endcolumn="23" rule="DefaultPackage" ruleset="Code Style" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="17" endline="17" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="entidade3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="entidade3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="5" endcolumn="23" rule="DefaultPackage" ruleset="Code Style" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="18" endline="18" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="produto1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="18" endline="18" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="produto1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="18" endline="18" begincolumn="5" endcolumn="21" rule="DefaultPackage" ruleset="Code Style" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="19" endline="19" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="produto2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="19" endline="19" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="produto2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="19" endline="19" begincolumn="5" endcolumn="21" rule="DefaultPackage" ruleset="Code Style" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="20" endline="20" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="produto3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="20" endline="20" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="produto3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="20" endline="20" begincolumn="5" endcolumn="21" rule="DefaultPackage" ruleset="Code Style" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="21" endline="21" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="transacaoEnvio1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="21" endline="21" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="transacaoEnvio1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="21" endline="21" begincolumn="5" endcolumn="32" rule="DefaultPackage" ruleset="Code Style" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="22" endline="22" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="transacaoEnvio2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="22" endline="22" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="transacaoEnvio2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="22" endline="22" begincolumn="5" endcolumn="32" rule="DefaultPackage" ruleset="Code Style" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="23" endline="23" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="transacaoEnvio3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="23" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="transacaoEnvio3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="23" begincolumn="5" endcolumn="32" rule="DefaultPackage" ruleset="Code Style" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="24" endline="24" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="transacaoEnvio4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="24" endline="24" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="transacaoEnvio4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="24" endline="24" begincolumn="5" endcolumn="32" rule="DefaultPackage" ruleset="Code Style" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="25" endline="25" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="encomenda1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="25" endline="25" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="encomenda1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="25" endline="25" begincolumn="5" endcolumn="25" rule="DefaultPackage" ruleset="Code Style" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="26" endline="26" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="encomenda2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="26" endline="26" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="encomenda2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="26" endline="26" begincolumn="5" endcolumn="25" rule="DefaultPackage" ruleset="Code Style" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="27" endline="27" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="encomenda3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="27" endline="27" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="encomenda3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="27" endline="27" begincolumn="5" endcolumn="25" rule="DefaultPackage" ruleset="Code Style" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="28" endline="28" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="encomenda4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="28" endline="28" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicGestaoEncomendasTest" variable="encomenda4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="28" endline="28" begincolumn="5" endcolumn="25" rule="DefaultPackage" ruleset="Code Style" class="BasicGestaoEncomendasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="67" endline="92" begincolumn="5" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" class="BasicGestaoEncomendasTest" method="addEncomendaTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="68" endline="68" begincolumn="9" endcolumn="44" rule="OneDeclarationPerLine" ruleset="Best Practices" class="BasicGestaoEncomendasTest" method="addEncomendaTest" variable="VariableDeclaratorId, VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#onedeclarationperline" priority="4">
+Use one line for each declaration, it enhances code readability.
+</violation>
+<violation beginline="71" endline="71" begincolumn="17" endcolumn="30" rule="UnusedLocalVariable" ruleset="Best Practices" class="BasicGestaoEncomendasTest" method="addEncomendaTest" variable="expectedResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'expectedResult'.
+</violation>
+<violation beginline="71" endline="76" begincolumn="9" endcolumn="30" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="BasicGestaoEncomendasTest" method="addEncomendaTest" variable="expectedResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'expectedResult' (lines '71'-'76').
+</violation>
+<violation beginline="71" endline="76" begincolumn="9" endcolumn="30" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="BasicGestaoEncomendasTest" method="addEncomendaTest" variable="expectedResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'expectedResult' (lines '71'-'76').
+</violation>
+<violation beginline="76" endline="92" begincolumn="9" endcolumn="30" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="BasicGestaoEncomendasTest" method="addEncomendaTest" variable="expectedResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'expectedResult' (lines '76'-'92').
+</violation>
+<violation beginline="76" endline="92" begincolumn="9" endcolumn="30" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="BasicGestaoEncomendasTest" method="addEncomendaTest" variable="expectedResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'expectedResult' (lines '76'-'92').
+</violation>
+<violation beginline="95" endline="114" begincolumn="5" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" class="BasicGestaoEncomendasTest" method="cancelarEncomendaTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="96" endline="96" begincolumn="9" endcolumn="43" rule="OneDeclarationPerLine" ruleset="Best Practices" class="BasicGestaoEncomendasTest" method="cancelarEncomendaTest" variable="VariableDeclaratorId, VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#onedeclarationperline" priority="4">
+Use one line for each declaration, it enhances code readability.
+</violation>
+<violation beginline="104" endline="106" begincolumn="9" endcolumn="10" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="BasicGestaoEncomendasTest" method="cancelarEncomendaTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'exception' could be declared final
+</violation>
+<violation beginline="117" endline="147" begincolumn="5" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" class="BasicGestaoEncomendasTest" method="findEncomendaTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="118" endline="118" begincolumn="9" endcolumn="45" rule="OneDeclarationPerLine" ruleset="Best Practices" class="BasicGestaoEncomendasTest" method="findEncomendaTest" variable="VariableDeclaratorId, VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#onedeclarationperline" priority="4">
+Use one line for each declaration, it enhances code readability.
+</violation>
+<violation beginline="127" endline="127" begincolumn="26" endcolumn="29" rule="NullAssignment" ruleset="Error Prone" class="BasicGestaoEncomendasTest" method="findEncomendaTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="127" endline="127" begincolumn="26" endcolumn="29" rule="NullAssignment" ruleset="Error Prone" class="BasicGestaoEncomendasTest" method="findEncomendaTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="132" endline="132" begincolumn="26" endcolumn="29" rule="NullAssignment" ruleset="Error Prone" class="BasicGestaoEncomendasTest" method="findEncomendaTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="132" endline="132" begincolumn="26" endcolumn="29" rule="NullAssignment" ruleset="Error Prone" class="BasicGestaoEncomendasTest" method="findEncomendaTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+</file>
+<file name="C:\Users\Asus\Desktop\TP2_ESII\esii-grupo1213-tp2\ESII-Grupo1213-TP2\src\test\java\BasicTransactionEncomendaTest.java">
+<violation beginline="13" endline="64" begincolumn="1" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" class="BasicTransactionEncomendaTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="14" endline="14" begincolumn="17" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicTransactionEncomendaTest" variable="basicTransactionEncomenda" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="14" endline="14" begincolumn="17" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="BasicTransactionEncomendaTest" variable="basicTransactionEncomenda" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="14" endline="14" begincolumn="5" endcolumn="42" rule="DefaultPackage" ruleset="Code Style" class="BasicTransactionEncomendaTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="18" endline="18" begincolumn="9" endcolumn="138" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="BasicTransactionEncomendaTest" method="setUp" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'sender' could be declared final
+</violation>
+<violation beginline="19" endline="19" begincolumn="9" endcolumn="138" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="BasicTransactionEncomendaTest" method="setUp" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'receiver' could be declared final
+</violation>
+<violation beginline="20" endline="20" begincolumn="9" endcolumn="62" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="BasicTransactionEncomendaTest" method="setUp" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'tipoTrasaction' could be declared final
+</violation>
+<violation beginline="25" endline="63" begincolumn="5" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" class="BasicTransactionEncomendaTest" method="addTransactionLineTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="26" endline="26" begincolumn="9" endcolumn="44" rule="OneDeclarationPerLine" ruleset="Best Practices" class="BasicTransactionEncomendaTest" method="addTransactionLineTest" variable="VariableDeclaratorId, VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#onedeclarationperline" priority="4">
+Use one line for each declaration, it enhances code readability.
+</violation>
+<violation beginline="31" endline="31" begincolumn="9" endcolumn="88" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="BasicTransactionEncomendaTest" method="addTransactionLineTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'produto' could be declared final
+</violation>
+<violation beginline="32" endline="32" begincolumn="9" endcolumn="78" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="BasicTransactionEncomendaTest" method="addTransactionLineTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'transactionLine1' could be declared final
+</violation>
+<violation beginline="51" endline="51" begincolumn="9" endcolumn="92" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="BasicTransactionEncomendaTest" method="addTransactionLineTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'transactionLine2' could be declared final
+</violation>
+</file>
+<file name="C:\Users\Asus\Desktop\TP2_ESII\esii-grupo1213-tp2\ESII-Grupo1213-TP2\src\test\java\EstatisticasTest.java">
+<violation beginline="12" endline="374" begincolumn="1" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" class="EstatisticasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="12" endline="374" begincolumn="1" endcolumn="1" rule="TooManyFields" ruleset="Design" class="EstatisticasTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#toomanyfields" priority="3">
+Too many fields
+</violation>
+<violation beginline="16" endline="16" begincolumn="20" endcolumn="26" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="entity1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="16" endline="16" begincolumn="20" endcolumn="26" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="entity1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="16" endline="16" begincolumn="13" endcolumn="27" rule="SingularField" ruleset="Design" class="EstatisticasTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'entity1' could be replaced by a local variable.
+</violation>
+<violation beginline="17" endline="17" begincolumn="20" endcolumn="26" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="entity2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="20" endcolumn="26" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="entity2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="13" endcolumn="27" rule="SingularField" ruleset="Design" class="EstatisticasTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'entity2' could be replaced by a local variable.
+</violation>
+<violation beginline="18" endline="18" begincolumn="20" endcolumn="26" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="entity3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="18" endline="18" begincolumn="20" endcolumn="26" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="entity3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="18" endline="18" begincolumn="13" endcolumn="27" rule="SingularField" ruleset="Design" class="EstatisticasTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'entity3' could be replaced by a local variable.
+</violation>
+<violation beginline="19" endline="19" begincolumn="21" endcolumn="28" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="produto1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="19" endline="19" begincolumn="21" endcolumn="28" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="produto1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="19" endline="19" begincolumn="13" endcolumn="29" rule="SingularField" ruleset="Design" class="EstatisticasTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'produto1' could be replaced by a local variable.
+</violation>
+<violation beginline="20" endline="20" begincolumn="21" endcolumn="28" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="produto2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="20" endline="20" begincolumn="21" endcolumn="28" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="produto2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="20" endline="20" begincolumn="13" endcolumn="29" rule="SingularField" ruleset="Design" class="EstatisticasTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'produto2' could be replaced by a local variable.
+</violation>
+<violation beginline="21" endline="21" begincolumn="21" endcolumn="28" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="produto3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="21" endline="21" begincolumn="21" endcolumn="28" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="produto3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="21" endline="21" begincolumn="13" endcolumn="29" rule="SingularField" ruleset="Design" class="EstatisticasTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'produto3' could be replaced by a local variable.
+</violation>
+<violation beginline="23" endline="23" begincolumn="25" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="transactionEnvio1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="23" begincolumn="25" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="transactionEnvio1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="23" begincolumn="13" endcolumn="42" rule="SingularField" ruleset="Design" class="EstatisticasTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'transactionEnvio1' could be replaced by a local variable.
+</violation>
+<violation beginline="24" endline="24" begincolumn="25" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="transactionEnvio2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="24" endline="24" begincolumn="25" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="transactionEnvio2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="24" endline="24" begincolumn="13" endcolumn="42" rule="SingularField" ruleset="Design" class="EstatisticasTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'transactionEnvio2' could be replaced by a local variable.
+</violation>
+<violation beginline="25" endline="25" begincolumn="25" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="transactionEnvio3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="25" endline="25" begincolumn="25" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="transactionEnvio3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="25" endline="25" begincolumn="13" endcolumn="42" rule="SingularField" ruleset="Design" class="EstatisticasTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'transactionEnvio3' could be replaced by a local variable.
+</violation>
+<violation beginline="26" endline="26" begincolumn="25" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="transactionEnvio4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="26" endline="26" begincolumn="25" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="transactionEnvio4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="26" endline="26" begincolumn="13" endcolumn="42" rule="SingularField" ruleset="Design" class="EstatisticasTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'transactionEnvio4' could be replaced by a local variable.
+</violation>
+<violation beginline="27" endline="27" begincolumn="25" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="transactionEnvio5" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="27" endline="27" begincolumn="25" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="transactionEnvio5" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="27" endline="27" begincolumn="13" endcolumn="42" rule="SingularField" ruleset="Design" class="EstatisticasTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'transactionEnvio5' could be replaced by a local variable.
+</violation>
+<violation beginline="28" endline="28" begincolumn="25" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="transactionEnvio6" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="28" endline="28" begincolumn="25" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="transactionEnvio6" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="28" endline="28" begincolumn="13" endcolumn="42" rule="SingularField" ruleset="Design" class="EstatisticasTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'transactionEnvio6' could be replaced by a local variable.
+</violation>
+<violation beginline="29" endline="29" begincolumn="25" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="transactionEnvio7" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="29" endline="29" begincolumn="25" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="transactionEnvio7" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="29" endline="29" begincolumn="13" endcolumn="42" rule="SingularField" ruleset="Design" class="EstatisticasTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'transactionEnvio7' could be replaced by a local variable.
+</violation>
+<violation beginline="30" endline="30" begincolumn="25" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="transactionEnvio8" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="30" endline="30" begincolumn="25" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="transactionEnvio8" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="30" endline="30" begincolumn="13" endcolumn="42" rule="SingularField" ruleset="Design" class="EstatisticasTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'transactionEnvio8' could be replaced by a local variable.
+</violation>
+<violation beginline="32" endline="32" begincolumn="23" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="encomenda1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="32" endline="32" begincolumn="23" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="encomenda1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="33" endline="33" begincolumn="23" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="encomenda2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="33" endline="33" begincolumn="23" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="encomenda2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="34" endline="34" begincolumn="23" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="encomenda3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="34" endline="34" begincolumn="23" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="encomenda3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="35" endline="35" begincolumn="23" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="encomenda4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="35" endline="35" begincolumn="23" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="encomenda4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="36" endline="36" begincolumn="23" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="encomenda5" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="36" endline="36" begincolumn="23" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="encomenda5" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="37" endline="37" begincolumn="23" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="encomenda6" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="37" endline="37" begincolumn="23" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="encomenda6" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="38" endline="38" begincolumn="23" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="encomenda7" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="38" endline="38" begincolumn="23" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="encomenda7" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="39" endline="39" begincolumn="23" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="encomenda8" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="39" endline="39" begincolumn="23" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EstatisticasTest" variable="encomenda8" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="86" endline="137" begincolumn="5" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" class="EstatisticasTest" method="getNumMedioEncomendasPorDiaTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="117" endline="117" begincolumn="52" endcolumn="86" rule="AvoidDuplicateLiterals" ruleset="Error Prone" class="EstatisticasTest" method="getNumMedioEncomendasPorDiaTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "Test2: Expected result should be " appears 4 times in this file; the first occurrence is on line 117
+</violation>
+<violation beginline="117" endline="117" begincolumn="52" endcolumn="86" rule="AvoidDuplicateLiterals" ruleset="Error Prone" class="EstatisticasTest" method="getNumMedioEncomendasPorDiaTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "Test2: Expected result should be " appears 4 times in this file; the first occurrence is on line 117
+</violation>
+<violation beginline="125" endline="125" begincolumn="54" endcolumn="98" rule="AvoidDuplicateLiterals" ruleset="Error Prone" class="EstatisticasTest" method="getNumMedioEncomendasPorDiaTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "Test3: Expected result should be exception " appears 4 times in this file; the first occurrence is on line 125
+</violation>
+<violation beginline="125" endline="125" begincolumn="54" endcolumn="98" rule="AvoidDuplicateLiterals" ruleset="Error Prone" class="EstatisticasTest" method="getNumMedioEncomendasPorDiaTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "Test3: Expected result should be exception " appears 4 times in this file; the first occurrence is on line 125
+</violation>
+<violation beginline="140" endline="183" begincolumn="5" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" class="EstatisticasTest" method="getNumMedioProdutosPorTransacaoTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="186" endline="221" begincolumn="5" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" class="EstatisticasTest" method="getValorMedioTransacoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="224" endline="298" begincolumn="5" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" class="EstatisticasTest" method="getTotalCustosEnvioTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="301" endline="373" begincolumn="5" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'getValorMedioVendasComprasPorDistritoTest()' has a cyclomatic complexity of 7.
+</violation>
+<violation beginline="301" endline="373" begincolumn="5" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="303" endline="317" begincolumn="9" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '303'-'317').
+</violation>
+<violation beginline="303" endline="317" begincolumn="9" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '303'-'317').
+</violation>
+<violation beginline="306" endline="306" begincolumn="9" endcolumn="124" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="VariableDeclaratorId, VariableDeclaratorId, VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'Aveiro' could be declared final
+</violation>
+<violation beginline="306" endline="306" begincolumn="9" endcolumn="124" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="VariableDeclaratorId, VariableDeclaratorId, VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'Portalegre' could be declared final
+</violation>
+<violation beginline="306" endline="306" begincolumn="9" endcolumn="124" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="VariableDeclaratorId, VariableDeclaratorId, VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'Porto' could be declared final
+</violation>
+<violation beginline="306" endline="306" begincolumn="9" endcolumn="124" rule="OneDeclarationPerLine" ruleset="Best Practices" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="VariableDeclaratorId, VariableDeclaratorId, VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#onedeclarationperline" priority="4">
+Use one line for each declaration, it enhances code readability.
+</violation>
+<violation beginline="314" endline="328" begincolumn="21" endcolumn="40" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="actualResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'actualResult' (lines '314'-'328').
+</violation>
+<violation beginline="314" endline="328" begincolumn="21" endcolumn="40" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="actualResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'actualResult' (lines '314'-'328').
+</violation>
+<violation beginline="317" endline="318" begincolumn="9" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '317'-'318').
+</violation>
+<violation beginline="317" endline="318" begincolumn="9" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '317'-'318').
+</violation>
+<violation beginline="318" endline="319" begincolumn="9" endcolumn="33" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '318'-'319').
+</violation>
+<violation beginline="318" endline="319" begincolumn="9" endcolumn="33" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '318'-'319').
+</violation>
+<violation beginline="319" endline="320" begincolumn="9" endcolumn="33" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '319'-'320').
+</violation>
+<violation beginline="319" endline="320" begincolumn="9" endcolumn="33" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '319'-'320').
+</violation>
+<violation beginline="323" endline="350" begincolumn="9" endcolumn="112" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="actualMatrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'actualMatrix' (lines '323'-'350').
+</violation>
+<violation beginline="323" endline="350" begincolumn="9" endcolumn="112" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="actualMatrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'actualMatrix' (lines '323'-'350').
+</violation>
+<violation beginline="328" endline="328" begincolumn="21" endcolumn="40" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="actualResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'actualResult' (lines '328'-'328').
+</violation>
+<violation beginline="328" endline="328" begincolumn="21" endcolumn="40" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="actualResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'actualResult' (lines '328'-'328').
+</violation>
+<violation beginline="339" endline="355" begincolumn="21" endcolumn="40" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="actualResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'actualResult' (lines '339'-'355').
+</violation>
+<violation beginline="339" endline="355" begincolumn="21" endcolumn="40" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="actualResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'actualResult' (lines '339'-'355').
+</violation>
+<violation beginline="342" endline="343" begincolumn="9" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '342'-'343').
+</violation>
+<violation beginline="342" endline="343" begincolumn="9" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '342'-'343').
+</violation>
+<violation beginline="343" endline="344" begincolumn="9" endcolumn="33" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '343'-'344').
+</violation>
+<violation beginline="343" endline="344" begincolumn="9" endcolumn="33" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '343'-'344').
+</violation>
+<violation beginline="344" endline="345" begincolumn="9" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '344'-'345').
+</violation>
+<violation beginline="344" endline="345" begincolumn="9" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '344'-'345').
+</violation>
+<violation beginline="345" endline="346" begincolumn="9" endcolumn="39" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '345'-'346').
+</violation>
+<violation beginline="345" endline="346" begincolumn="9" endcolumn="39" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '345'-'346').
+</violation>
+<violation beginline="346" endline="347" begincolumn="9" endcolumn="38" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '346'-'347').
+</violation>
+<violation beginline="346" endline="347" begincolumn="9" endcolumn="38" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="matrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'matrix' (lines '346'-'347').
+</violation>
+<violation beginline="350" endline="373" begincolumn="9" endcolumn="112" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="actualMatrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'actualMatrix' (lines '350'-'373').
+</violation>
+<violation beginline="350" endline="373" begincolumn="9" endcolumn="112" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="actualMatrix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'actualMatrix' (lines '350'-'373').
+</violation>
+<violation beginline="355" endline="355" begincolumn="21" endcolumn="40" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="actualResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'actualResult' (lines '355'-'355').
+</violation>
+<violation beginline="355" endline="355" begincolumn="21" endcolumn="40" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="actualResult" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'actualResult' (lines '355'-'355').
+</violation>
+<violation beginline="363" endline="365" begincolumn="9" endcolumn="10" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'exception' could be declared final
+</violation>
+<violation beginline="367" endline="367" begincolumn="9" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expectedMessage' could be declared final
+</violation>
+<violation beginline="368" endline="368" begincolumn="9" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="EstatisticasTest" method="getValorMedioVendasComprasPorDistritoTest" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'actualMessage' could be declared final
+</violation>
+</file>
+<file name="C:\Users\Asus\Desktop\TP2_ESII\esii-grupo1213-tp2\ESII-Grupo1213-TP2\src\test\java\ExpedicoesTest.java">
+<violation beginline="12" endline="12" begincolumn="1" endcolumn="26" rule="UnusedImports" ruleset="Best Practices" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Unused import 'java.util.Iterator'
+</violation>
+<violation beginline="16" endline="116" begincolumn="1" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="16" endline="116" begincolumn="1" endcolumn="1" rule="TooManyFields" ruleset="Design" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_design.html#toomanyfields" priority="3">
+Too many fields
+</violation>
+<violation beginline="17" endline="17" begincolumn="27" endcolumn="49" rule="RedundantFieldInitializer" ruleset="Performance" class="ExpedicoesTest" variable="gestaoEncomendas" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_performance.html#redundantfieldinitializer" priority="3">
+Avoid using redundant field initializer for 'gestaoEncomendas'
+</violation>
+<violation beginline="17" endline="17" begincolumn="27" endcolumn="42" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="gestaoEncomendas" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="27" endcolumn="42" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="gestaoEncomendas" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="5" endcolumn="50" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="18" endline="18" begincolumn="15" endcolumn="23" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="exception" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="18" endline="18" begincolumn="15" endcolumn="23" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="exception" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="18" endline="18" begincolumn="5" endcolumn="24" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="19" endline="19" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="entidade1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="19" endline="19" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="entidade1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="19" endline="19" begincolumn="5" endcolumn="23" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="20" endline="20" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="entidade2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="20" endline="20" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="entidade2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="20" endline="20" begincolumn="5" endcolumn="23" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="21" endline="21" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="entidade3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="21" endline="21" begincolumn="14" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="entidade3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="21" endline="21" begincolumn="5" endcolumn="23" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="22" endline="22" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="produto1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="22" endline="22" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="produto1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="22" endline="22" begincolumn="5" endcolumn="21" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="23" endline="23" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="produto2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="23" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="produto2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="23" begincolumn="5" endcolumn="21" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="24" endline="24" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="produto3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="24" endline="24" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="produto3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="24" endline="24" begincolumn="5" endcolumn="21" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="25" endline="25" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="produto4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="25" endline="25" begincolumn="13" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="produto4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="25" endline="25" begincolumn="5" endcolumn="21" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="26" endline="26" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="transacaoEnvio1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="26" endline="26" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="transacaoEnvio1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="26" endline="26" begincolumn="5" endcolumn="32" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="27" endline="27" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="transacaoEnvio2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="27" endline="27" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="transacaoEnvio2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="27" endline="27" begincolumn="5" endcolumn="32" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="28" endline="28" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="transacaoEnvio3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="28" endline="28" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="transacaoEnvio3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="28" endline="28" begincolumn="5" endcolumn="32" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="29" endline="29" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="transacaoEnvio4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="29" endline="29" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="transacaoEnvio4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="29" endline="29" begincolumn="5" endcolumn="32" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="30" endline="30" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="transacaoEnvio5" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="30" endline="30" begincolumn="17" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="transacaoEnvio5" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="30" endline="30" begincolumn="5" endcolumn="32" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="31" endline="31" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="encomenda1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="31" endline="31" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="encomenda1" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="31" endline="31" begincolumn="5" endcolumn="25" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="32" endline="32" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="encomenda2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="32" endline="32" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="encomenda2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="32" endline="32" begincolumn="5" endcolumn="25" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="33" endline="33" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="encomenda3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="33" endline="33" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="encomenda3" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="33" endline="33" begincolumn="5" endcolumn="25" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="34" endline="34" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="encomenda4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="34" endline="34" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="encomenda4" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="34" endline="34" begincolumn="5" endcolumn="25" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="35" endline="35" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="encomenda5" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="35" endline="35" begincolumn="15" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="ExpedicoesTest" variable="encomenda5" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="35" endline="35" begincolumn="5" endcolumn="25" rule="DefaultPackage" ruleset="Code Style" class="ExpedicoesTest" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="83" endline="115" begincolumn="5" endcolumn="5" rule="JUnitTestContainsTooManyAsserts" ruleset="Best Practices" class="ExpedicoesTest" method="assignEncomendas" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts" priority="3">
+Unit tests should not contain more than 1 assert(s).
+</violation>
+<violation beginline="84" endline="84" begincolumn="9" endcolumn="44" rule="OneDeclarationPerLine" ruleset="Best Practices" class="ExpedicoesTest" method="assignEncomendas" variable="VariableDeclaratorId, VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#onedeclarationperline" priority="4">
+Use one line for each declaration, it enhances code readability.
+</violation>
+<violation beginline="85" endline="85" begincolumn="9" endcolumn="44" rule="OneDeclarationPerLine" ruleset="Best Practices" class="ExpedicoesTest" method="assignEncomendas" variable="VariableDeclaratorId, VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#onedeclarationperline" priority="4">
+Use one line for each declaration, it enhances code readability.
+</violation>
+</file>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+</pmd>
